@@ -15,17 +15,16 @@ collections:
     editor:
       preview: false
     fields:
-        - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page'}
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-        - { label: 'Sections', 
-            name: 'sections', 
-            widget: 'list',
-            UI: fields,
-            fields: [
-             - {label: Image, name: image, widget: image}
-            ]
-          }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page'}
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Sections', 
+          name: 'sections', 
+          widget: 'list',
+          UI: fields,
+          fields:
+            - { label: 'Title', name: 'title', widget: 'string' }
+        }
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
