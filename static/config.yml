@@ -21,7 +21,8 @@ collections:
         - { label: 'Sections', 
             name: 'sections', 
             widget: 'list',
-            types: []
+            UI: fields,
+            fields: 
           }
   - name: 'blog'
     label: 'Blog'
