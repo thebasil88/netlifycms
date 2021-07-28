@@ -6,6 +6,22 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: 'pages',
+    label: 'Pages',
+    editor:
+        preview: false
+    folder: 'content/pages',
+    slug: '{{ slug }}',
+    create: true,
+    fields:
+        - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page'}
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+        - { label: 'Sections', 
+            name: 'sections', 
+            widget: 'list' 
+            types: []
+          }
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
