@@ -6,20 +6,21 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'pages',
-    label: 'Pages',
+  - name: 'pages'
+    label: 'Pages'
+    folder: 'content/pages'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
     editor:
-        preview: false
-    folder: 'content/pages',
-    slug: '{{ slug }}',
-    create: true,
+      preview: false
     fields:
         - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page'}
         - { label: 'Title', name: 'title', widget: 'string' }
         - { label: 'Publish Date', name: 'date', widget: 'datetime' }
         - { label: 'Sections', 
             name: 'sections', 
-            widget: 'list' 
+            widget: 'list',
             types: []
           }
   - name: 'blog'
