@@ -22,7 +22,9 @@ collections:
             name: 'sections', 
             widget: 'list',
             UI: fields,
-            fields: 
+            fields: [
+             - {label: Image, name: image, widget: image}
+            ]
           }
   - name: 'blog'
     label: 'Blog'
