@@ -2,7 +2,7 @@
 	<div>
 		<h1 class="text-indigo-600">HI!</h1>
 		<div v-for="document in documents" key="document.slug" class="prose w-full max-w-full">
-			<nuxt-content :document="document" />
+			<NuxtLink :to="document.path">{{ document.title }}</NuxtLink>
 		</div>
 	</div>
 </template>

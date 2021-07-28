@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<h1 class="text-indigo-600">HI!</h1>
-		<div v-for="document in documents" key="document.slug" class="prose w-full max-w-full">
+		<h1 class="text-indigo-600">{{ document.title }}</h1>
+		<div class="prose w-full max-w-full">
 			<nuxt-content :document="document" />
 		</div>
 	</div>
@@ -9,10 +9,9 @@
 
 <script>
 export default {
- async asyncData({ $content }) {
-    const documents = await $content("blog").fetch();
-	console.log(documents);
-    return { documents };
+ async asyncData({ $content, params  }) {
+    const document = await $content("blog", params.slug).fetch();
+    return { document };
  },
  head() {
     return {
