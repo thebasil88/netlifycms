@@ -2,6 +2,10 @@
 title: First Blog
 date: 2021-07-28T18:24:57.757Z
 description: Excerpt for stuff
+wys: |-
+  More editing
+
+  Another and more **specific editable field**
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a ante elit. Aenean in tempor purus. Curabitur iaculis iaculis dolor et tempus. Vivamus aliquet, felis in tempor mollis, lorem quam congue ligula, nec commodo leo dui eu massa. Aliquam id maximus quam. Donec efficitur, nunc vel convallis semper, nibh mauris rhoncus enim, a egestas augue nulla sit amet diam. Fusce sit amet tellus neque. Nullam vitae nunc vitae nisl hendrerit viverra nec in ex. Cras eu venenatis nibh. Maecenas ligula lacus, rhoncus sit amet iaculis ornare, euismod eu nibh. In eu augue neque. Praesent nisi nunc, pulvinar ut molestie vel, vehicula ac mauris.  Test Edit
 
