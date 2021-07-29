@@ -17,6 +17,7 @@ collections:
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page'}
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - label: Team
         name: team
@@ -28,6 +29,7 @@ collections:
             widget: object
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Title Colored', name: 'title_colored', widget: 'string' }
               - { label: 'Content', name: 'content', widget: 'markdown' }
               - { label: 'Button1 Text', name: 'btn1_text', widget: 'text' }
               - { label: 'Button2 Link', name: 'btn1_link', widget: 'text' }

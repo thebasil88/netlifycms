@@ -2,7 +2,7 @@
 	<div>
 		<div v-for="t in document.team">
 			<Hero v-if="t.type == 'hero,'" :title="t.title"/>
-			<h1 v-if="t.type == 'prices,'">Prices</h1>
+			<Prices v-if="t.type == 'prices,'">Prices />
 			<h1 v-if="t.type == 'fake,'">Prices</h1>
 		</div>
 	</div>
