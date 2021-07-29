@@ -23,13 +23,19 @@ collections:
         ui: types
         widget: list
         types:
-          - label: Hero, 
-            name: hero, 
+          - label: Hero 
+            name: hero
             widget: object
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
-          - label: Prices, 
-            name: prices, 
+              - { label: 'Content', name: 'content', widget: 'markdown' }
+              - { label: 'Button1 Text', name: 'btn1_text', widget: 'text' }
+              - { label: 'Button2 Link', name: 'btn1_link', widget: 'text' }
+              - { label: 'Button2 Text', name: 'btn2_text', widget: 'text' }
+              - { label: 'Button2 link', name: 'btn2_link', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image', default: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80' }
+          - label: Prices 
+            name: prices 
             widget: object
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
