@@ -22,7 +22,7 @@ collections:
         name: team
         ui: types
         widget: list
-        fields:
+        types:
           - label: Hero, 
             name: hero, 
             widget: object
