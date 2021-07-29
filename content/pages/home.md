@@ -16,4 +16,6 @@ module:
     type: hero
     title_colored: The Best in Town
     image: /img/ivan-torres-mquqbmszggm-unsplash.jpg
+  - type: prices
+    title: title is required apparently
 ---
