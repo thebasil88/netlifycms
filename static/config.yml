@@ -23,8 +23,13 @@ collections:
         ui: types
         widget: list
         fields:
-          - label: Name, 
-            name: name, 
+          - label: Hero, 
+            name: hero, 
+            widget: object
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+          - label: Prices, 
+            name: prices, 
             widget: object
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
