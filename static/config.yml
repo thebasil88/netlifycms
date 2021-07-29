@@ -19,8 +19,8 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - label: Team
-        name: team
+      - label: Modules
+        name: module
         ui: types
         widget: list
         types:
@@ -31,10 +31,10 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'Title Colored', name: 'title_colored', widget: 'string' }
               - { label: 'Content', name: 'content', widget: 'markdown' }
-              - { label: 'Button1 Text', name: 'btn1_text', widget: 'text' }
-              - { label: 'Button2 Link', name: 'btn1_link', widget: 'text' }
-              - { label: 'Button2 Text', name: 'btn2_text', widget: 'text' }
-              - { label: 'Button2 link', name: 'btn2_link', widget: 'text' }
+              - { label: 'Button1 Text', name: 'btn1_text', widget: 'string' }
+              - { label: 'Button2 Link', name: 'btn1_link', widget: 'string' }
+              - { label: 'Button2 Text', name: 'btn2_text', widget: 'string' }
+              - { label: 'Button2 link', name: 'btn2_link', widget: 'string' }
               - { label: 'Image', name: 'image', widget: 'image', default: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80' }
           - label: Prices 
             name: prices 

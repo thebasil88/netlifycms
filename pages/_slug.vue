@@ -1,9 +1,10 @@
 <template>
 	<div>
-		<div v-for="t in document.team">
-			<Hero v-if="t.type == 'hero,'" :title="t.title"/>
-			<Prices v-if="t.type == 'prices,'">Prices />
-			<h1 v-if="t.type == 'fake,'">Prices</h1>
+		<button @click="showmodule">show module data</button>
+		<div v-for="t in document.modules">
+			<Hero v-if="t.type == 'hero'" :title="t.title"/>
+			<Prices v-if="t.type == 'prices'" />
+			<h1 v-if="t.type == 'fake'">Prices</h1>
 		</div>
 	</div>
 </template>
@@ -16,8 +17,8 @@ export default {
     return { document };
  },
  methods: {
-	showTeam: function(){
-		console.log(this.document.team, "team");
+	showmodule: function(){
+		console.log(this.document, "module");
 	},
  },
  head() {
