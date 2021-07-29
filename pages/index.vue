@@ -1,11 +1,18 @@
 <template>
 	<div>
-		<h1 class="text-indigo-600">HI!</h1>
-		<div v-for="document in documents" key="document.slug" class="prose w-full max-w-full">
-			<NuxtLink :to="document.slug">{{ document.title }}</NuxtLink>
-			<div v-for="t in document.modules">
-				
-			</div>
+		<div v-for="t in document.module">
+			<Hero v-if="t.type == 'hero'" 
+				  :title="t.title"
+				  :title_colored="t.title_colored"
+				  :btn2_link="t.btn2_link"
+				  :btn1_link="t.btn1_link"
+				  :btn2_text="t.btn2_text"
+				  :btn1_text="t.btn1_text"
+				  :content="t.content"
+				  :image="t.image"
+			/>
+			<Prices v-if="t.type == 'prices'" />
+			<h1 v-if="t.type == 'fake'">Prices</h1>
 		</div>
 	</div>
 </template>
@@ -13,9 +20,9 @@
 <script>
 export default {
  async asyncData({ $content }) {
-    const documents = await $content("pages").fetch();
-	console.log(documents);
-    return { documents };
+    const document = await $content("pages", 'home').fetch();
+	console.log(document);
+    return { document };
  },
  head() {
     return {
