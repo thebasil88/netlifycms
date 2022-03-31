@@ -4,6 +4,8 @@ title: Home
 slug: home
 date: 2021-07-29T13:43:28.190Z
 module:
+  - type: prices
+    title: title is required apparently
   - btn2_link: "#menu"
     btn1_link: https://www.google.com
     btn2_text: What we got
@@ -16,6 +18,4 @@ module:
     type: hero
     title_colored: The Best in Town
     image: /img/ivan-torres-mquqbmszggm-unsplash.jpg
-  - type: prices
-    title: title is required apparently
 ---
